@@ -1,0 +1,47 @@
+.input-group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-icon-container {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #FF7F00;
+  background: #fff;
+  align-items: center;
+}
+
+.input-icon-container input {
+  outline: none;
+  border: none;
+  background: none;
+  flex: auto 1 1;
+  width: 100%;
+  background: none;
+}
+
+.input-icon-container .fa {
+  padding: 10px;
+}
+
+.group {
+  display: table;
+  width: 100%;
+  font-size: 2em;
+}
+
+.item {
+  display: table-cell;
+}
+
+.text {
+  white-space: nowrap;
+  width: 1%;
+  padding: 0 10px;
+}
+
+.line {
+  border-bottom: 1px solid #000;
+  position: relative;
+}
