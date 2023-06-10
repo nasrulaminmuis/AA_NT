@@ -1,0 +1,20 @@
+/* Jika lebar layar adalah 1024px atau lebih, atur ukuran teks menjadi 80px */
+@media screen and (min-width: 1024px) {
+  h2 {
+    font-size: 80px;
+  }
+}
+
+/* Jika lebar layar adalah antara 768px dan 1023px, atur ukuran teks menjadi 60px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  h2 {
+    font-size: 60px;
+  }
+}
+
+/* Jika lebar layar adalah 767px atau kurang, atur ukuran teks menjadi 30px */
+@media screen and (max-width: 767px) {
+  h2 {
+    font-size: 3px;
+  }
+}
