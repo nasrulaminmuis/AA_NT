@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="src/style-index.css">
     <style>
-        @media screen and (min-width: 1024px) {
+        @media screen and (max-width: 1280px) {
             .slogan h2 {
                 font-size: 3vw;
                 padding-left: 5vw;
@@ -18,6 +18,13 @@
             .slogan p {
                 font-size: 2vw;
                 padding-left: 5vw;
+            }
+
+            .kotak {
+                height: 60vh;
+                width: 90vh;
+                translate: -5% 5%;
+                background-color: #FFB77B;
             }
         }
 
@@ -31,6 +38,12 @@
                 font-size: 3vw;
                 padding-left: 5vw;
             }
+            .kotak {
+                height: 23vh;
+                width: 35vh;
+                translate: -5% 5%;
+                background-color: #FFB77B;
+            }
         }
 
         @media screen and (max-width: 767px) {
@@ -41,6 +54,28 @@
 
             .slogan p {
                 font-size: 2.5vw;
+            }
+            .kotak {
+                height: 24vh;
+                width: 37vh;
+                translate: -5% 5%;
+                background-color: #FFB77B;
+            }
+        }
+        @media screen and (max-width: 414px) {
+            .slogan h2 {
+                font-size: 5vw;
+                line-height: 1.2;
+            }
+
+            .slogan p {
+                font-size: 2.5vw;
+            }
+            .kotak {
+                height: 15vh;
+                width: 22vh;
+                translate: -5% 5%;
+                background-color: #FFB77B;
             }
         }
     </style>
@@ -134,7 +169,7 @@
                 <div class="col d-flex justify-content-center align-items-center" style="height: 100vmin; background-color: #FFE6C7;">
                     <div class="col d-flex justify-content-center align-items-center position-relative" style="height: 100%;">
                         <img src="asset/img/aceh.png" alt="aceh" class="img-fluid z-1">
-                        <div class="position-absolute top-50 start-50 translate-middle kotak" style="height: 60vh; width: 90vh; translate: -5% 5%; background-color: #FFB77B;"></div>
+                        <div class="position-absolute top-50 start-50 translate-middle kotak"></div>
                     </div>
                 </div>
             </div>
