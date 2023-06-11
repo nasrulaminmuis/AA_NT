@@ -26,28 +26,56 @@
                     <form action="dashboard.html" method="post">
                         <div class="mb-3 row gx-1">
                             <div class="col">
+                                <div class="input-icon-container rounded-4">
                                 <input type="text" name="nama depan" id="nama"
                                     class="form-control border-danger-subtle rounded-4" placeholder="nama depan">
-                            </div>
+                                </div>
+                                </div>
                             <div class="col">
+                                <div class="input-icon-container rounded-4">
                                 <input type="text" name="nama belakang" id="username"
                                     class="form-control border-danger-subtle rounded-4" placeholder="nama belakang">   
-                            </div>
+                                </div>
+                                </div>
                         </div>
                         <div class="mb-3">
+                            <div class="input-icon-container rounded-4">
                             <input type="text" name="username" id="username"
                                 class="form-control border-danger-subtle rounded-4" placeholder="nama pengguna">
-                        </div>
+                            </div>
+                            </div>
                         <div class="mb-3">
+                            <div class="input-icon-container rounded-4">
                             <input type="email" name="email" id="email"
                                 class="form-control border-danger-subtle rounded-4" placeholder="email">
-                        </div>
-                        <div class="mb-3 input-group ">
-                            <div class="input-icon-container rounded-4">
-                                <input type="password" name="password" id="pw" placeholder="kata sandi" class="ps-3">
-                                <i class="fa fa-eye-slash" ></i>
                             </div>
-                        </div>
+                            </div>
+                            <div class="mb-3 input-group">
+                                <div class="input-icon-container rounded-4">
+                                    <input type="password" name="password" id="pw" placeholder="kata sandi" class="ps-3">
+                                    <span class="input-group-text" id="showHide">
+                                       <i class="fa fa-eye-slash"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <script>
+                                const password = document.getElementById('pw');
+                                const showHide = document.getElementById('showHide');
+    
+                                password.type = 'password';
+                                showHide.innerHTML = '<i class="fa fa-eye-slash"></i>';
+                                showHide.style.cursor = 'pointer';
+    
+                                showHide.addEventListener('click', () => {
+                                    if (password.type === 'password') {
+                                        password.type = 'text';
+                                        showHide.innerHTML = '<i class="fa fa-eye"></i>';
+                                    } else {
+                                        showHide.innerHTML= '<i class="fa fa-eye-slash"></i>';
+                                        password.type = 'password';
+                                    }
+                                });
+                            </script>
                         <div class="mb-3 input-group ">
                             <div class="input-icon-container rounded-4">
                                 <input type="password" name="password" id="pw" placeholder="tulis ulang kata sandi" class="ps-3">
