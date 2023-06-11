@@ -60,30 +60,12 @@
                             </div>
                         <div class="mb-3 input-group">
                             <div class="input-icon-container rounded-4">
-                                <input type="password" name="password" id="pw" placeholder="tulis ulang kata sandi" class="ps-3">
-                                <span class="input" id="showHide">
+                                <input type="password" name="password" id="repw" placeholder="tulis ulang kata sandi" class="ps-3">
+                                <span class="input" id="reshowHide">
                                     <i class="fa fa-eye-slash"></i>
                                  </span>
                             </div>
                         </div>
-                        <script>
-                            const password = document.getElementById('pw');
-                            const showHide = document.getElementById('showHide');
-
-                            password.type = 'password';
-                            showHide.innerHTML = '<i class="fa fa-eye-slash"></i>';
-                            showHide.style.cursor = 'pointer';
-
-                            showHide.addEventListener('click', () => {
-                                if (password.type === 'password') {
-                                    password.type = 'text';
-                                    showHide.innerHTML = '<i class="fa fa-eye"></i>';
-                                } else {
-                                    showHide.innerHTML= '<i class="fa fa-eye-slash"></i>';
-                                    password.type = 'password';
-                                }
-                            });
-                        </script>
                         <button type="submit" class="btn w-100 rounded-3 text-light"
                             style="background-color:  #FF7F00;">Daftar</button>
                     </form>
@@ -124,6 +106,38 @@
         <!-- place footer here -->
 
     </footer>
+    <script>
+        const password = document.getElementById('pw');
+        const showHide = document.getElementById('showHide');
+        const reshowHide = document.getElementById('reshowHide');
+        const repassword = document.getElementById('repw');
+
+        password.type = 'password';
+        repassword.type = 'password';
+        showHide.innerHTML = '<i class="fa fa-eye-slash"></i>';
+        showHide.style.cursor = 'pointer';
+        reshowHide.innerHTML = '<i class="fa fa-eye-slash"></i>';
+        reshowHide.style.cursor = 'pointer';
+
+        showHide.addEventListener('click', () => {
+            if (password.type === 'password') {
+                password.type = 'text';
+                showHide.innerHTML = '<i class="fa fa-eye"></i>';
+            } else {
+                showHide.innerHTML= '<i class="fa fa-eye-slash"></i>';
+                password.type = 'password';
+            }
+        });
+        reshowHide.addEventListener('click', () => {
+            if (repassword.type === 'password') {
+                repassword.type = 'text';
+                reshowHide.innerHTML = '<i class="fa fa-eye"></i>';
+            } else {
+                reshowHide.innerHTML= '<i class="fa fa-eye-slash"></i>';
+                repassword.type = 'password';
+            }
+        });
+    </script>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
