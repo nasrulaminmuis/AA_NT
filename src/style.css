@@ -45,3 +45,16 @@
   border-bottom: 1px solid #000;
   position: relative;
 }
+
+.header {
+    padding: 30px;
+    text-align: center;
+    background: #DF7857;
+    color: white;
+}
+
+.card {
+    background-color: #EDE9D5;
+    padding: 20px;
+    margin-top: 20px;
+}
