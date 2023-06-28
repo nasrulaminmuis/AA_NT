@@ -26,17 +26,17 @@
                 </div>
             </div>
             <div class="col d-flex justify-content-end align-items-end p-1 pe-5">
-                <div>Bantuan</div>
-                <span class="fa fa-globe ms-3 " style="font-size: 1vw;"></span>
+                <span class="fa fa-globe ms-3 pb-1" style="font-size: 1vw;"></span>
                 <div class="ms-2">Bahasa Indonesia</div>
-                <i class="fa fa-caret-down"></i>
-                <div class="btn rounded-5 ms-3" style="background-color: #FF7F00;">Profil</div>
+                <a href="src/profile.html" class="link-dark ps-2 pt-2 dropdown">
+                    <i class="fa fa-user fa-xl"></i>
+                </a>
             </div>
         </div>
         <div class="p-1" style="background-color: #FFA96E;"></div>
         <div class="row p-5" style="background-color: #FFD2A1;">
             <div class="col d-flex justify-content-center align-content-center align-items-center">
-                <h2><a href="../index.html" class="link-underline link-underline-opacity-0 link-dark"><b>LOGO</b></a> |
+                <h2><a href="../dashboard.html" class="link-underline link-underline-opacity-0 link-dark"><b>HOME</b></a> |
                     Keranjang</h2>
             </div>
             <div class="col">
@@ -72,7 +72,7 @@
                     <div style="background-color: #FF7F00;height: 25px;width: 25px;"></div>
                 </div>
                 <div class="col-3 d-flex justify-content-center align-content-center align-items-center">
-                    <img src="../asset/img/thumbnail.png" class="img-fluid rounded-top" alt="">
+                    <img src="../asset/img/jaipong.png" class="img-fluid rounded-top" alt="">
                 </div>
                 <div class="col-2">
                     <h5>Tari Kipas</h5>
@@ -106,7 +106,7 @@
                     <div style="background-color: #FF7F00;height: 25px;width: 25px;"></div>
                 </div>
                 <div class="col-3 d-flex justify-content-center align-content-center align-items-center">
-                    <img src="../asset/img/thumbnail.png" class="img-fluid rounded-top" alt="">
+                    <img src="../asset/img/kecak.png" class="img-fluid rounded-top" alt="">
                 </div>
                 <div class="col-2">
                     <h5>Tari Kipas</h5>
@@ -176,8 +176,8 @@
             </div>
         </div>
         <div class="p-1" style="background-color: #FFA96E;"></div>
-        <div class="produk" style=" background-color: #ffd2a1;">
-            <div class="row pt-5">
+        <div class="produk " style=" background-color: #FFD2A1;" data-aos="zoom-in-up">
+            <div class="row pt-5" id="video">
                 <div class="col-2 d-flex justify-content-center align-items-center">
                     <div class="fs-1 ms-5">Video</div>
                 </div>
@@ -193,18 +193,18 @@
                     <div class="fs-3">lainnya</div>
                 </div>
             </div>
-            <div class="album py-5" style=" background-color: #ffd2a1;">
+            <div class="album py-5" style=" background-color: #FFD2A1;">
                 <div class="container">
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
                         <div class="col">
                             <div class="card shadow-sm" style=" background-color: #ffe6c7;">
-                                <img src="asset/img/thumbnail.png" />
+                                <img src="../asset/img/jaipong.png" class="img-fluid" />
                                 <div class="card-body">
                                     <h5 class="card-title">Rp. 150.000,00</h5>
-                                    <h5 class="card-title">TARI LABUHAN BAJO</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the bulk
-                                        of the card's content.</p>
+                                    <h5 class="card-title">TARI JAIPONG</h5>
+                                    <p class="card-text">Tari Jaipong merupakan salah satu tari tradisional dari Jawa
+                                        Barat. Pada awal perkembangannya Tari Jaipong muncul di Bandung dan Karawang.
+                                    </p>
                                     <a href="src/detail.html" class="btn w-100"
                                         style="background-color: #ff7f00">Beli</a>
                                 </div>
@@ -212,13 +212,12 @@
                         </div>
                         <div class="col">
                             <div class="card shadow-sm" style=" background-color: #ffe6c7;">
-                                <img src="asset/img/thumbnail.png" />
+                                <img src="../asset/img/remo.png" class="img-fluid" />
                                 <div class="card-body">
                                     <h5 class="card-title">Rp. 150.000,00</h5>
-                                    <h5 class="card-title">TARI LABUHAN BAJO</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the bulk
-                                        of the card's content.</p>
+                                    <h5 class="card-title">TARI REMO</h5>
+                                    <p class="card-text">Tari Remo adalah salah satu tarian untuk penyambutan tamu
+                                        agung, ditampilkan baik oleh satu atau banyak penari.</p>
                                     <a href="src/detail.html" class="btn w-100"
                                         style="background-color: #ff7f00">Beli</a>
                                 </div>
@@ -226,13 +225,12 @@
                         </div>
                         <div class="col">
                             <div class="card shadow-sm" style=" background-color: #ffe6c7;">
-                                <img src="asset/img/thumbnail.png" />
+                                <img src="../asset/img/piring.png" class="img-fluid" />
                                 <div class="card-body">
                                     <h5 class="card-title">Rp. 150.000,00</h5>
-                                    <h5 class="card-title">TARI LABUHAN BAJO</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the bulk
-                                        of the card's content.</p>
+                                    <h5 class="card-title">TARI PIRING</h5>
+                                    <p class="card-text">Tari piring (bahasa Minang: tari piriang) adalah tarian
+                                        tradisional Minangkabau yang menampilkan atraksi menggunakan piring.</p>
                                     <a href="src/detail.html" class="btn w-100"
                                         style="background-color: #ff7f00">Beli</a>
                                 </div>
@@ -240,13 +238,12 @@
                         </div>
                         <div class="col">
                             <div class="card shadow-sm" style=" background-color: #ffe6c7;">
-                                <img src="asset/img/thumbnail.png" />
+                                <img src="../asset/img/kecak.png" class="img-fluid" />
                                 <div class="card-body">
                                     <h5 class="card-title">Rp. 150.000,00</h5>
-                                    <h5 class="card-title">TARI LABUHAN BAJO</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the bulk
-                                        of the card's content.</p>
+                                    <h5 class="card-title">TARI KECAK</h5>
+                                    <p class="card-text">Tari Kecak adalah pertunjukan dramatari seni khas Bali yang
+                                        lebih utama menceritakan mengenai Ramayana.</p>
                                     <a href="src/detail.html" class="btn w-100"
                                         style="background-color: #ff7f00">Beli</a>
                                 </div>
